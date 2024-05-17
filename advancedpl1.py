@@ -1,0 +1,16 @@
+from PIL import Image
+img=Image.open("orange.jpg")
+img.show()
+width,height=img.size
+print(width,height)
+print(img.format)
+print(img.info)
+img1=img.save("x.png")
+img2=img.rotate(90)
+img2.show()
+size=(150,150,300,300)
+img3=img.crop(size)
+img3.show()
+RE_SIZE=(100,100)
+img4=img.resize(RE_SIZE)
+img4.show()
